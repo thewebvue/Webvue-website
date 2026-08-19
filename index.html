@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thewebvue — Event Website Templates, Starting at ₹799</title>
+  <meta name="description" content="Browse premium birthday, wedding and anniversary website templates. Pick a design and we customize and deliver it starting at ₹799.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: 'hsl(30 50% 98%)',
+            foreground: 'hsl(20 20% 15%)',
+            card: 'hsl(0 0% 100%)',
+            'card-foreground': 'hsl(20 20% 15%)',
+            primary: 'hsl(260 40% 25%)',
+            'primary-foreground': 'hsl(0 0% 100%)',
+            secondary: 'hsl(30 30% 94%)',
+            muted: 'hsl(30 10% 90%)',
+            'muted-foreground': 'hsl(25 10% 45%)',
+            accent: 'hsl(25 85% 55%)',
+            border: 'hsl(30 15% 88%)',
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            display: ['Fraunces', 'serif'],
+          },
+          borderRadius: {
+            '4xl': '2rem',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,799&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+
+  <style>
+    .bg-gradient-primary {
+      background: linear-gradient(135deg, hsl(260, 45%, 25%) 0%, hsl(275, 40%, 35%) 100%);
+    }
+    .bg-hero-glow {
+      background: radial-gradient(circle at 80% 20%, hsl(270, 60%, 94%) 0%, transparent 50%),
+                  radial-gradient(circle at 10% 80%, hsl(30, 80%, 92%) 0%, transparent 40%);
+    }
+    .shadow-soft {
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+    }
+    .shadow-lift {
+      box-shadow: 0 20px 40px -10px rgba(40, 20, 60, 0.12);
+    }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .animate-rise {
+      animation: rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .animate-float {
+      animation: float 5s ease-in-out infinite;
+    }
+    .hover-lift {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .hover-lift:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.08);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-background font-sans text-foreground antialiased">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
+    <nav class="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:flex sm:justify-between">
+      
+      <!-- Zoomed & Cropped Image Logo + Text -->
+      <a href="#top" class="flex min-w-0 items-center gap-3">
+        <div class="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-black shadow-soft">
+          <img src="webvuelogo.png" alt="Thewebvue Logo Icon" class="absolute h-full w-full object-cover scale-[1.2]">
+        </div>
+        <span class="font-display text-xl font-bold tracking-tight text-foreground">Thewebvue</span>
+      </a>
+
+      <div class="flex items-center gap-6">
+        <a href="#how" class="hidden text-sm font-medium text-muted-foreground transition-colors hover:text-foreground md:inline">
+          How it works
+        </a>
+        <a href="#templates" class="hidden text-sm font-medium text-muted-foreground transition-colors hover:text-foreground md:inline">
+          Templates
+        </a>
+        <a href="#contact" class="rounded-full bg-gradient-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-soft transition-transform duration-300 hover:scale-[1.04]">
+          Get started
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden bg-hero-glow">
+    <div class="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:py-24 lg:grid-cols-2">
+      <div>
+        <p class="animate-rise inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-semibold tracking-wide text-muted-foreground uppercase" style="animation-delay: 0ms;">
+          A branch of TheAdvue
+        </p>
+        <h1 class="animate-rise mt-6 font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance sm:text-5xl lg:text-6xl" style="animation-delay: 120ms;">
+          Celebrate Life's Moments with a Beautiful Digital Presence.
+        </h1>
+        <p class="animate-rise mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg" style="animation-delay: 240ms;">
+          Browse our premium event website templates. Choose a design, and we'll customize it for you starting at just ₹799.
+        </p>
+        <div class="animate-rise mt-9 flex flex-wrap items-center gap-4" style="animation-delay: 360ms;">
+          <a href="#templates" class="rounded-full bg-gradient-primary px-8 py-3.5 text-sm font-semibold text-primary-foreground shadow-lift transition-transform duration-300 hover:-translate-y-1">
+            Explore Templates
+          </a>
+          <span class="text-sm text-muted-foreground">
+            Starting at ₹799 · Delivered ready to share
+          </span>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="animate-float">
+          <img src="celebration.png" alt="Celebrate Life's Moments" class="mx-auto w-full max-w-lg object-contain drop-shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / TheAdvue -->
+  <section class="mx-auto max-w-6xl px-5 py-20">
+    <div class="overflow-hidden rounded-4xl bg-gradient-primary p-8 text-primary-foreground shadow-lift sm:p-14">
+      <div class="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
+        <div>
+          <p class="text-xs font-semibold tracking-[0.2em] uppercase opacity-80">About us</p>
+          <h2 class="mt-4 font-display text-3xl leading-tight font-semibold sm:text-4xl">
+            Thewebvue is an official branch and subdivision of TheAdvue.
+          </h2>
+          <p class="mt-6 font-display text-xl italic opacity-90">"Your Growth Is Our Blueprint."</p>
+          <p class="mt-5 max-w-2xl leading-relaxed opacity-90">
+            At TheAdvue, we blend strategy, creativity, and tech to make brands stand out. We don't just create — we deliver real results that help your business grow.
+          </p>
+          <a href="https://theadvue.com/" target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex rounded-full bg-background px-7 py-3 text-sm font-semibold text-primary shadow-soft transition-transform duration-300 hover:-translate-y-1">
+            Visit TheAdvue
+          </a>
+        </div>
+        <div class="grid content-center gap-4">
+          <div class="rounded-3xl border border-primary-foreground/20 bg-primary-foreground/10 p-6 backdrop-blur-sm">
+            <p class="text-sm font-semibold tracking-wide uppercase opacity-80">TheAdvue</p>
+            <p class="mt-2 leading-relaxed opacity-90">
+              Large-scale Business Website Development, App Development, SEO, and Digital Marketing.
+            </p>
+          </div>
+          <div class="rounded-3xl border border-primary-foreground/20 bg-primary-foreground/10 p-6 backdrop-blur-sm">
+            <p class="text-sm font-semibold tracking-wide uppercase opacity-80">Thewebvue</p>
+            <p class="mt-2 leading-relaxed opacity-90">
+              Focused exclusively on personal, specialized event websites — birthdays, weddings, anniversaries and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="mx-auto max-w-6xl scroll-mt-24 px-5 pb-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl">How it works</h2>
+      <p class="mt-3 text-muted-foreground">Three simple steps from browsing to a finished, personalised event website.</p>
+    </div>
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      <article class="hover-lift h-full rounded-3xl border border-border bg-card p-8 shadow-soft">
+        <span class="font-display text-4xl font-semibold text-accent">01</span>
+        <h3 class="mt-4 text-lg font-bold">Browse & Choose</h3>
+        <p class="mt-2 leading-relaxed text-muted-foreground">Explore our collection of premium event templates.</p>
+      </article>
+      <article class="hover-lift h-full rounded-3xl border border-border bg-card p-8 shadow-soft">
+        <span class="font-display text-4xl font-semibold text-accent">02</span>
+        <h3 class="mt-4 text-lg font-bold">Experience the Live Preview</h3>
+        <p class="mt-2 leading-relaxed text-muted-foreground">Click to interact with the actual website, exactly as your guests would.</p>
+      </article>
+      <article class="hover-lift h-full rounded-3xl border border-border bg-card p-8 shadow-soft">
+        <span class="font-display text-4xl font-semibold text-accent">03</span>
+        <h3 class="mt-4 text-lg font-bold">We Customize It</h3>
+        <p class="mt-2 leading-relaxed text-muted-foreground">Send us your details, and we'll tailor the site to your needs starting at a base fee of ₹799.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Templates -->
+  <section id="templates" class="scroll-mt-24 bg-secondary/60 py-20">
+    <div class="mx-auto max-w-6xl px-5">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl">Live template gallery</h2>
+        <p class="mt-3 text-muted-foreground">
+          Every template is a real, working website. Open a live preview and imagine your own names, photos and dates in it.
+        </p>
+      </div>
+      <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        
+        <!-- Birthday Template -->
+        <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+          <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+            <img src="birthday.jpg" alt="Birthday Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Birthday</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <h3 class="text-lg font-bold">1st Year Baby Birthday Celebration</h3>
+            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">A joyful, colorful website to celebrate your little one's big milestone.</p>
+            <a href="https://birth-day-website-kkis.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+              Live Preview
+            </a>
+          </div>
+        </article>
+
+        <!-- Wedding Template -->
+        <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+          <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+            <img src="wedding.jpg" alt="Wedding Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Wedding</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <h3 class="text-lg font-bold">Elegant Wedding Website</h3>
+            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Share your love story, venue details, and RSVP beautifully.</p>
+            <a href="https://wedding-website-mu-ochre.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+              Live Preview
+            </a>
+          </div>
+        </article>
+
+        <!-- Anniversary Template -->
+        <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+          <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+            <img src="anniversary.jpg" alt="Anniversary Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Anniversary</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <h3 class="text-lg font-bold">1st Year Anniversary</h3>
+            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Relive the magic of your first year together.</p>
+            <a href="https://anniversary-site-omega-two.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+              Live Preview
+            </a>
+          </div>
+        </article>
+
+        <!-- Engagement Template -->
+        <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+          <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+            <img src="engagement_pic.png" alt="Engagement Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Engagement</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <h3 class="text-lg font-bold">Engagement Celebration</h3>
+            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Announce your special moment and invite guests to celebrate your engagement.</p>
+            <a href="https://engagementtemplate.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+              Live Preview
+            </a>
+          </div>
+        </article>
+
+        <!-- Naming Ceremony Template -->
+        <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+          <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+            <img src="naming_ceramony.png" alt="Naming Ceremony Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Naming Ceremony</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <h3 class="text-lg font-bold">Joyous Naming Ceremony</h3>
+            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Welcome your newest family member with a beautifully crafted digital invitation.</p>
+            <a href="https://namingceremonytemplate1.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+              Live Preview
+            </a>
+          </div>
+        </article>
+
+        <!-- House Warming Template -->
+        <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+          <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+            <img src="house_warming.png" alt="House Warming Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">House Warming</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <h3 class="text-lg font-bold">New Home Celebration</h3>
+            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Invite your loved ones to celebrate the opening of your new home.</p>
+            <a href="https://housewarming-vert.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+              Live Preview
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="contact" class="scroll-mt-24 px-5 py-24 bg-hero-glow">
+    <div class="mx-auto max-w-6xl">
+      <div class="text-center mb-16">
+        <p class="text-xs font-semibold tracking-[0.25em] text-muted-foreground uppercase">Transparent Pricing</p>
+        <h2 class="mt-5 font-display text-3xl leading-tight font-semibold tracking-tight text-balance sm:text-4xl">
+          Choose the Perfect Plan for Your Event
+        </h2>
+      </div>
+      
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Standard Plan -->
+        <div class="rounded-3xl border border-border bg-card p-8 shadow-soft hover-lift flex flex-col">
+          <h3 class="text-xl font-bold">Standard Template</h3>
+          <p class="mt-2 text-sm text-muted-foreground">Select a template and we add your details & photos.</p>
+          <p class="mt-6 font-display text-4xl font-semibold">₹799</p>
+          <ul class="mt-8 mb-8 flex-1 space-y-3 text-sm text-muted-foreground">
+            <li class="flex items-center gap-2"><span>✓</span> Replace text & images</li>
+            <li class="flex items-center gap-2"><span>✓</span> Ready to share link</li>
+            <li class="flex items-center gap-2"><span>✓</span> Mobile responsive</li>
+          </ul>
+        </div>
+        
+        <!-- Custom Plan -->
+        <div class="relative rounded-3xl border-2 border-primary bg-card p-8 shadow-lift hover-lift flex flex-col md:-translate-y-4">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-primary px-4 py-1 text-xs font-semibold text-primary-foreground whitespace-nowrap">
+            Most Popular
+          </span>
+          <h3 class="text-xl font-bold">Customized Template</h3>
+          <p class="mt-2 text-sm text-muted-foreground">Template layout and style tweaked to your liking.</p>
+          <p class="mt-6 font-display text-4xl font-semibold">₹1199</p>
+          <p class="mt-1 text-xs font-semibold text-accent">Just ₹400 extra</p>
+          <ul class="mt-8 mb-8 flex-1 space-y-3 text-sm text-muted-foreground">
+            <li class="flex items-center gap-2"><span>✓</span> Everything in Standard</li>
+            <li class="flex items-center gap-2"><span>✓</span> Custom color themes</li>
+            <li class="flex items-center gap-2"><span>✓</span> Layout modifications</li>
+          </ul>
+        </div>
+        
+        <!-- Fully Custom Plan -->
+        <div class="rounded-3xl border border-border bg-card p-8 shadow-soft hover-lift flex flex-col">
+          <h3 class="text-xl font-bold">Fully Custom</h3>
+          <p class="mt-2 text-sm text-muted-foreground">A bespoke personal website built entirely from scratch.</p>
+          <p class="mt-6 font-display text-4xl font-semibold">₹1999</p>
+          <ul class="mt-8 mb-8 flex-1 space-y-3 text-sm text-muted-foreground">
+            <li class="flex items-center gap-2"><span>✓</span> 100% Unique Design</li>
+            <li class="flex items-center gap-2"><span>✓</span> Advanced animations</li>
+            <li class="flex items-center gap-2"><span>✓</span> Unlimited revisions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <a href="https://theadvue.com/" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-full bg-gradient-primary px-9 py-4 text-sm font-semibold text-primary-foreground shadow-lift transition-transform duration-300 hover:-translate-y-1">
+          Contact Us to Get Started
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-border bg-card">
+    <div class="mx-auto grid max-w-6xl gap-4 px-5 py-10 sm:flex sm:items-center sm:justify-between">
+      <div class="min-w-0">
+        
+        <!-- Zoomed & Cropped Image Logo + Text -->
+        <div class="flex items-center gap-2">
+          <div class="relative flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-black">
+            <img src="webvuelogo.png" alt="Thewebvue Logo Icon" class="absolute h-full w-full object-cover scale-[1.2]">
+          </div>
+          <span class="font-display text-lg font-bold tracking-tight text-foreground">Thewebvue</span>
+        </div>
+        
+        <p class="mt-2 text-sm text-muted-foreground">
+          © 2026 Thewebvue. All rights reserved.
+        </p>
+      </div>
+      <a href="https://theadvue.com/" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-primary underline-offset-4 transition-colors hover:underline">
+        A branch of TheAdvue → theadvue.com
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll handler
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
