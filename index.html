@@ -6,7 +6,6 @@
   <title>Thewebvue — Event Website Templates, Starting at ₹799</title>
   <meta name="description" content="Browse premium birthday, wedding and anniversary website templates. Pick a design and we customize and deliver it starting at ₹799.">
   
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -37,7 +36,6 @@
     }
   </script>
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,799&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
@@ -81,11 +79,9 @@
 </head>
 <body class="min-h-screen bg-background font-sans text-foreground antialiased">
 
-  <!-- Nav -->
   <header class="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
     <nav class="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 sm:flex sm:justify-between">
       
-      <!-- Zoomed & Cropped Image Logo + Text -->
       <a href="#top" class="flex min-w-0 items-center gap-3">
         <div class="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-black shadow-soft">
           <img src="webvuelogo.png" alt="Thewebvue Logo Icon" class="absolute h-full w-full object-cover scale-[1.2]">
@@ -107,7 +103,6 @@
     </nav>
   </header>
 
-  <!-- Hero -->
   <section id="top" class="relative overflow-hidden bg-hero-glow">
     <div class="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:py-24 lg:grid-cols-2">
       <div>
@@ -137,7 +132,6 @@
     </div>
   </section>
 
-  <!-- About / TheAdvue -->
   <section class="mx-auto max-w-6xl px-5 py-20">
     <div class="overflow-hidden rounded-4xl bg-gradient-primary p-8 text-primary-foreground shadow-lift sm:p-14">
       <div class="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
@@ -172,7 +166,6 @@
     </div>
   </section>
 
-  <!-- How it works -->
   <section id="how" class="mx-auto max-w-6xl scroll-mt-24 px-5 pb-20">
     <div class="max-w-2xl">
       <h2 class="font-display text-3xl font-semibold tracking-tight sm:text-4xl">How it works</h2>
@@ -197,7 +190,6 @@
     </div>
   </section>
 
-  <!-- Templates -->
   <section id="templates" class="scroll-mt-24 bg-secondary/60 py-20">
     <div class="mx-auto max-w-6xl px-5">
       <div class="max-w-2xl">
@@ -206,103 +198,175 @@
           Every template is a real, working website. Open a live preview and imagine your own names, photos and dates in it.
         </p>
       </div>
-      <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      
+      <div class="mt-16 space-y-20">
         
-        <!-- Birthday Template -->
-        <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
-          <div class="relative overflow-hidden aspect-[4/3] bg-muted">
-            <img src="birthday.jpg" alt="Birthday Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Birthday</span>
+        <div>
+          <div class="mb-8 flex items-center gap-4">
+            <h3 class="font-display text-2xl font-semibold tracking-tight text-foreground">Weddings & Engagements</h3>
+            <div class="h-px flex-1 bg-border/80"></div>
           </div>
-          <div class="flex flex-1 flex-col p-6">
-            <h3 class="text-lg font-bold">1st Year Baby Birthday Celebration</h3>
-            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">A joyful, colorful website to celebrate your little one's big milestone.</p>
-            <a href="https://birth-day-website-kkis.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
-              Live Preview
-            </a>
-          </div>
-        </article>
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            
+            <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+              <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+                <img src="wedding.jpg" alt="Wedding Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Wedding</span>
+              </div>
+              <div class="flex flex-1 flex-col p-6">
+                <h3 class="text-lg font-bold">Elegant Wedding Website</h3>
+                <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Share your love story, venue details, and RSVP beautifully.</p>
+                <a href="https://wedding-website-mu-ochre.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+                  Live Preview
+                </a>
+              </div>
+            </article>
 
-        <!-- Wedding Template -->
-        <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
-          <div class="relative overflow-hidden aspect-[4/3] bg-muted">
-            <img src="wedding.jpg" alt="Wedding Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Wedding</span>
-          </div>
-          <div class="flex flex-1 flex-col p-6">
-            <h3 class="text-lg font-bold">Elegant Wedding Website</h3>
-            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Share your love story, venue details, and RSVP beautifully.</p>
-            <a href="https://wedding-website-mu-ochre.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
-              Live Preview
-            </a>
-          </div>
-        </article>
+            <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+              <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+                <img src="engagement_pic.png" alt="Engagement Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Engagement</span>
+              </div>
+              <div class="flex flex-1 flex-col p-6">
+                <h3 class="text-lg font-bold">Engagement Celebration</h3>
+                <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Announce your special moment and invite guests to celebrate your engagement.</p>
+                <a href="https://engagementtemplate.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+                  Live Preview
+                </a>
+              </div>
+            </article>
 
-        <!-- Anniversary Template -->
-        <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
-          <div class="relative overflow-hidden aspect-[4/3] bg-muted">
-            <img src="anniversary.jpg" alt="Anniversary Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Anniversary</span>
           </div>
-          <div class="flex flex-1 flex-col p-6">
-            <h3 class="text-lg font-bold">1st Year Anniversary</h3>
-            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Relive the magic of your first year together.</p>
-            <a href="https://anniversary-site-omega-two.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
-              Live Preview
-            </a>
-          </div>
-        </article>
+        </div>
 
-        <!-- Engagement Template -->
-        <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
-          <div class="relative overflow-hidden aspect-[4/3] bg-muted">
-            <img src="engagement_pic.png" alt="Engagement Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Engagement</span>
+        <div>
+          <div class="mb-8 flex items-center gap-4">
+            <h3 class="font-display text-2xl font-semibold tracking-tight text-foreground">Love & Valentine's</h3>
+            <div class="h-px flex-1 bg-border/80"></div>
           </div>
-          <div class="flex flex-1 flex-col p-6">
-            <h3 class="text-lg font-bold">Engagement Celebration</h3>
-            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Announce your special moment and invite guests to celebrate your engagement.</p>
-            <a href="https://engagementtemplate.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
-              Live Preview
-            </a>
-          </div>
-        </article>
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            
+            <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+              <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+                <img src="valantine_day.png" alt="Valentine's Day Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Valentine's</span>
+              </div>
+              <div class="flex flex-1 flex-col p-6">
+                <h3 class="text-lg font-bold">Valentine's Day Wish</h3>
+                <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Express your love with a beautifully crafted digital Valentine's Day greeting.</p>
+                <a href="https://valentinesdayweb-orpin.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+                  Live Preview
+                </a>
+              </div>
+            </article>
 
-        <!-- Naming Ceremony Template -->
-        <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
-          <div class="relative overflow-hidden aspect-[4/3] bg-muted">
-            <img src="naming_ceramony.png" alt="Naming Ceremony Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Naming Ceremony</span>
-          </div>
-          <div class="flex flex-1 flex-col p-6">
-            <h3 class="text-lg font-bold">Joyous Naming Ceremony</h3>
-            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Welcome your newest family member with a beautifully crafted digital invitation.</p>
-            <a href="https://namingceremonytemplate1.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
-              Live Preview
-            </a>
-          </div>
-        </article>
+            <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+              <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+                <img src="valantine_birthday.png" alt="Partner Birthday Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Birthday</span>
+              </div>
+              <div class="flex flex-1 flex-col p-6">
+                <h3 class="text-lg font-bold">Romantic Partner Birthday</h3>
+                <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">A romantic and special digital experience to celebrate your partner's birthday.</p>
+                <a href="https://birthdaywebapp-olive.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+                  Live Preview
+                </a>
+              </div>
+            </article>
 
-        <!-- House Warming Template -->
-        <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
-          <div class="relative overflow-hidden aspect-[4/3] bg-muted">
-            <img src="house_warming.png" alt="House Warming Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
-            <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">House Warming</span>
           </div>
-          <div class="flex flex-1 flex-col p-6">
-            <h3 class="text-lg font-bold">New Home Celebration</h3>
-            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Invite your loved ones to celebrate the opening of your new home.</p>
-            <a href="https://housewarming-vert.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
-              Live Preview
-            </a>
+        </div>
+
+        <div>
+          <div class="mb-8 flex items-center gap-4">
+            <h3 class="font-display text-2xl font-semibold tracking-tight text-foreground">Birthdays & Baby</h3>
+            <div class="h-px flex-1 bg-border/80"></div>
           </div>
-        </article>
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            
+            <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+              <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+                <img src="birthday.jpg" alt="Birthday Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Birthday</span>
+              </div>
+              <div class="flex flex-1 flex-col p-6">
+                <h3 class="text-lg font-bold">1st Year Baby Birthday Celebration</h3>
+                <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">A joyful, colorful website to celebrate your little one's big milestone.</p>
+                <a href="https://birth-day-website-kkis.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+                  Live Preview
+                </a>
+              </div>
+            </article>
+
+            <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+              <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+                <img src="naming_ceramony.png" alt="Naming Ceremony Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Naming Ceremony</span>
+              </div>
+              <div class="flex flex-1 flex-col p-6">
+                <h3 class="text-lg font-bold">Joyous Naming Ceremony</h3>
+                <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Welcome your newest family member with a beautifully crafted digital invitation.</p>
+                <a href="https://namingceremonytemplate1.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+                  Live Preview
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-8 flex items-center gap-4">
+            <h3 class="font-display text-2xl font-semibold tracking-tight text-foreground">Anniversaries</h3>
+            <div class="h-px flex-1 bg-border/80"></div>
+          </div>
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            
+            <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+              <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+                <img src="anniversary.jpg" alt="Anniversary Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">Anniversary</span>
+              </div>
+              <div class="flex flex-1 flex-col p-6">
+                <h3 class="text-lg font-bold">1st Year Anniversary</h3>
+                <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Relive the magic of your first year together.</p>
+                <a href="https://anniversary-site-omega-two.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+                  Live Preview
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-8 flex items-center gap-4">
+            <h3 class="font-display text-2xl font-semibold tracking-tight text-foreground">Housewarming</h3>
+            <div class="h-px flex-1 bg-border/80"></div>
+          </div>
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            
+            <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+              <div class="relative overflow-hidden aspect-[4/3] bg-muted">
+                <img src="house_warming.png" alt="House Warming Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">House Warming</span>
+              </div>
+              <div class="flex flex-1 flex-col p-6">
+                <h3 class="text-lg font-bold">New Home Celebration</h3>
+                <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Invite your loved ones to celebrate the opening of your new home.</p>
+                <a href="https://housewarming-vert.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03]">
+                  Live Preview
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Pricing Section -->
   <section id="contact" class="scroll-mt-24 px-5 py-24 bg-hero-glow">
     <div class="mx-auto max-w-6xl">
       <div class="text-center mb-16">
@@ -313,7 +377,6 @@
       </div>
       
       <div class="grid gap-8 md:grid-cols-3">
-        <!-- Standard Plan -->
         <div class="rounded-3xl border border-border bg-card p-8 shadow-soft hover-lift flex flex-col">
           <h3 class="text-xl font-bold">Standard Template</h3>
           <p class="mt-2 text-sm text-muted-foreground">Select a template and we add your details & photos.</p>
@@ -325,7 +388,6 @@
           </ul>
         </div>
         
-        <!-- Custom Plan -->
         <div class="relative rounded-3xl border-2 border-primary bg-card p-8 shadow-lift hover-lift flex flex-col md:-translate-y-4">
           <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-primary px-4 py-1 text-xs font-semibold text-primary-foreground whitespace-nowrap">
             Most Popular
@@ -341,7 +403,6 @@
           </ul>
         </div>
         
-        <!-- Fully Custom Plan -->
         <div class="rounded-3xl border border-border bg-card p-8 shadow-soft hover-lift flex flex-col">
           <h3 class="text-xl font-bold">Fully Custom</h3>
           <p class="mt-2 text-sm text-muted-foreground">A bespoke personal website built entirely from scratch.</p>
@@ -362,12 +423,10 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="border-t border-border bg-card">
     <div class="mx-auto grid max-w-6xl gap-4 px-5 py-10 sm:flex sm:items-center sm:justify-between">
       <div class="min-w-0">
         
-        <!-- Zoomed & Cropped Image Logo + Text -->
         <div class="flex items-center gap-2">
           <div class="relative flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-black">
             <img src="webvuelogo.png" alt="Thewebvue Logo Icon" class="absolute h-full w-full object-cover scale-[1.2]">
