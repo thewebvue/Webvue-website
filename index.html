@@ -96,6 +96,9 @@
         <a href="#templates" class="hidden text-sm font-medium text-muted-foreground transition-colors hover:text-foreground md:inline">
           Templates
         </a>
+        <a href="#contact-us" class="hidden text-sm font-medium text-muted-foreground transition-colors hover:text-foreground md:inline">
+          Contact Us
+        </a>
         <a href="#contact" class="rounded-full bg-gradient-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-soft transition-transform duration-300 hover:scale-[1.04]">
           Get started
         </a>
@@ -208,7 +211,6 @@
           </div>
           <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             
-            <!-- NEW TEMPLATE 1 -->
             <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
               <div class="relative overflow-hidden aspect-[4/3] bg-muted">
                 <img src="vikki_papu_img.png" alt="Premium Modern Wedding Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -223,7 +225,6 @@
               </div>
             </article>
 
-            <!-- NEW TEMPLATE 2 -->
             <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
               <div class="relative overflow-hidden aspect-[4/3] bg-muted">
                 <img src="viki_papu2.png" alt="Royal & Sacred Wedding Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -238,7 +239,6 @@
               </div>
             </article>
 
-            <!-- ORIGINAL ELEGANT WEDDING TEMPLATE -->
             <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
               <div class="relative overflow-hidden aspect-[4/3] bg-muted">
                 <img src="wedding.jpg" alt="Wedding Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -253,7 +253,6 @@
               </div>
             </article>
 
-            <!-- ORIGINAL ENGAGEMENT TEMPLATE -->
             <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
               <div class="relative overflow-hidden aspect-[4/3] bg-muted">
                 <img src="engagement_pic.png" alt="Engagement Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -344,10 +343,8 @@
               </div>
             </article>
 
-            <!-- NEW Tamil Birthday Template -->
             <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
               <div class="relative overflow-hidden aspect-[4/3] bg-muted">
-                <!-- Note: You can replace 'tamil_birthday.png' with your specific image -->
                 <img src="birthday_tamil.png" alt="Tamil Birthday Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
                 <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">பிறந்தநாள்</span>
               </div>
@@ -387,14 +384,13 @@
           </div>
         </div>
 
-<div>
+        <div>
           <div class="mb-8 flex items-center gap-4">
             <h3 class="font-display text-2xl font-semibold tracking-tight text-foreground">Housewarming</h3>
             <div class="h-px flex-1 bg-border/80"></div>
           </div>
           <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             
-            <!-- Original English Housewarming Template -->
             <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
               <div class="relative overflow-hidden aspect-[4/3] bg-muted">
                 <img src="house_warming.png" alt="House Warming Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -409,10 +405,8 @@
               </div>
             </article>
 
-            <!-- NEW Tamil Housewarming Template -->
             <article class="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
               <div class="relative overflow-hidden aspect-[4/3] bg-muted">
-                <!-- Note: You can replace 'house_warming.png' with a new image specific to this Tamil template if you have one -->
                 <img src="house_tamil.png" alt="Tamil House Warming Template Preview" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105">
                 <span class="absolute top-4 left-4 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur shadow-sm">புதுமனை புகுவிழா</span>
               </div>
@@ -481,24 +475,84 @@
       </div>
 
       <div class="mt-16 text-center">
-        <a href="https://theadvue.com/" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-full bg-gradient-primary px-9 py-4 text-sm font-semibold text-primary-foreground shadow-lift transition-transform duration-300 hover:-translate-y-1">
+        <a href="#contact-us" class="inline-flex rounded-full bg-gradient-primary px-9 py-4 text-sm font-semibold text-primary-foreground shadow-lift transition-transform duration-300 hover:-translate-y-1">
           Contact Us to Get Started
         </a>
       </div>
     </div>
   </section>
 
+  <!-- INTERACTIVE CONTACT US SECTION -->
+  <section id="contact-us" class="scroll-mt-24 border-t border-border bg-card px-5 py-20">
+    <div class="mx-auto max-w-xl text-center">
+      <p class="text-xs font-semibold tracking-[0.25em] text-muted-foreground uppercase">Get In Touch</p>
+      <h2 class="mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+        Tell Us What You Need
+      </h2>
+      <p class="mt-3 text-muted-foreground mb-8">
+        Fill out your details below and choose how you'd like to connect.
+      </p>
+
+      <form id="contactForm" onsubmit="event.preventDefault();" class="text-left space-y-5 rounded-3xl border border-border bg-secondary/30 p-6 sm:p-10 shadow-soft">
+        
+        <div>
+          <label for="userName" class="block text-sm font-semibold text-foreground mb-1.5">Your Name *</label>
+          <input type="text" id="userName" required placeholder="e.g. John Doe" class="block w-full rounded-xl border border-border bg-card px-4 py-3 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20">
+        </div>
+        
+        <div>
+          <label for="userNumber" class="block text-sm font-semibold text-foreground mb-1.5">Phone Number *</label>
+          <input type="tel" id="userNumber" required placeholder="e.g. +91 9876543210" class="block w-full rounded-xl border border-border bg-card px-4 py-3 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20">
+        </div>
+        
+        <div>
+          <label for="userLocation" class="block text-sm font-semibold text-foreground mb-1.5">From (City / Location) *</label>
+          <input type="text" id="userLocation" required placeholder="e.g. Chennai" class="block w-full rounded-xl border border-border bg-card px-4 py-3 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20">
+        </div>
+
+        <div>
+          <label for="templateGroup" class="block text-sm font-semibold text-foreground mb-1.5">Which template are you looking for? *</label>
+          <select id="templateGroup" required class="block w-full rounded-xl border border-border bg-card px-4 py-3 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20">
+            <option value="" disabled selected>Select a template category...</option>
+            <option value="Weddings & Engagements">Weddings & Engagements</option>
+            <option value="Love & Valentine's">Love & Valentine's</option>
+            <option value="Birthdays & Baby">Birthdays & Baby</option>
+            <option value="Anniversaries">Anniversaries</option>
+            <option value="Housewarming">Housewarming</option>
+            <option value="Custom Requirement">Custom Requirement / Other</option>
+          </select>
+        </div>
+
+        <div class="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <!-- WhatsApp Submit -->
+          <button type="button" onclick="handleWhatsApp()" class="hover-lift flex w-full sm:w-auto items-center justify-center gap-3 rounded-full bg-[#25D366] px-8 py-3.5 font-semibold text-white shadow-soft transition-all duration-300 hover:bg-[#20ba5a]">
+            <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>Chat on WhatsApp</span>
+          </button>
+
+          <!-- Call Submit -->
+          <button type="button" onclick="handleCall()" class="hover-lift flex w-full sm:w-auto items-center justify-center gap-3 rounded-full bg-gradient-primary px-8 py-3.5 font-semibold text-primary-foreground shadow-lift transition-transform duration-300">
+            <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            <span>Call Now</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
   <footer class="border-t border-border bg-card">
     <div class="mx-auto grid max-w-6xl gap-4 px-5 py-10 sm:flex sm:items-center sm:justify-between">
       <div class="min-w-0">
-        
         <div class="flex items-center gap-2">
           <div class="relative flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-black">
             <img src="webvuelogo.png" alt="Thewebvue Logo Icon" class="absolute h-full w-full object-cover scale-[1.2]">
           </div>
           <span class="font-display text-lg font-bold tracking-tight text-foreground">Thewebvue</span>
         </div>
-        
         <p class="mt-2 text-sm text-muted-foreground">
           © 2026 Thewebvue. All rights reserved.
         </p>
@@ -520,6 +574,40 @@
         }
       });
     });
+
+    // Form Validation and Action Handlers
+    function getFormData() {
+      const name = document.getElementById('userName').value.trim();
+      const number = document.getElementById('userNumber').value.trim();
+      const location = document.getElementById('userLocation').value.trim();
+      const template = document.getElementById('templateGroup').value;
+
+      if (!name || !number || !location || !template) {
+        alert("Please fill in all fields (Name, Phone Number, Location, and Template) before proceeding.");
+        return null;
+      }
+
+      return { name, number, location, template };
+    }
+
+    function handleWhatsApp() {
+      const data = getFormData();
+      if (!data) return; // Stop if validation failed
+
+      // Formatted WhatsApp message with bold key-value pairs
+      const formattedMessage = `Hello Thewebvue! 👋\n\nI am interested in getting an event website template. Here are my details:\n\n👤 *Name:* ${data.name}\n📞 *Phone:* ${data.number}\n📍 *Location:* ${data.location}\n🎨 *Category:* ${data.template}\n\nPlease let me know the next steps!`;
+      
+      // Open WhatsApp with formatted text
+      window.open(`https://wa.me/919600305176?text=${encodeURIComponent(formattedMessage)}`, '_blank');
+    }
+
+    function handleCall() {
+      const data = getFormData();
+      if (!data) return; // Stop if validation failed
+
+      // Trigger phone dialer
+      window.location.href = 'tel:+919600305176';
+    }
   </script>
 </body>
 </html>
