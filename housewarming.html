@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Housewarming — Thewebvue</title>
+  <meta name="description" content="Housewarming and புதுமனை புகுவிழா invitation website templates from Thewebvue.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: 'hsl(30 50% 98%)',
+            foreground: 'hsl(20 20% 15%)',
+            card: 'hsl(0 0% 100%)',
+            'card-foreground': 'hsl(20 20% 15%)',
+            primary: 'hsl(260 40% 25%)',
+            'primary-foreground': 'hsl(0 0% 100%)',
+            secondary: 'hsl(30 30% 94%)',
+            muted: 'hsl(30 10% 90%)',
+            'muted-foreground': 'hsl(25 10% 45%)',
+            accent: 'hsl(25 85% 55%)',
+            border: 'hsl(30 15% 88%)',
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            display: ['Fraunces', 'serif'],
+          },
+          borderRadius: { '4xl': '2rem' }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="housewarming" class="min-h-screen bg-background font-sans text-foreground antialiased">
+
+  <header class="wv-header">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
+      <a href="index.html#top" class="flex min-w-0 items-center gap-3">
+        <div class="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl wv-logo-mark shadow-soft">
+          <img src="webvuelogo.png" alt="Thewebvue Logo Icon" class="absolute h-full w-full object-cover scale-[1.2]">
+        </div>
+        <span class="font-display text-xl font-bold tracking-tight text-foreground">Thewebvue</span>
+      </a>
+
+      <div class="hidden items-center gap-7 md:flex">
+        <a href="index.html#how" class="wv-nav-link">How it works</a>
+        <a href="index.html#categories" class="wv-nav-link active">Templates</a>
+        <a href="index.html#pricing" class="wv-nav-link">Pricing</a>
+        <a href="index.html#contact-us" class="wv-nav-link">Contact</a>
+        <a href="tel:+919629006826" class="wv-nav-link">9629006826</a>
+        <a href="index.html#contact-us" class="rounded-full btn-brand px-5 py-2 text-sm font-semibold">Get started</a>
+      </div>
+
+      <button id="navToggle" aria-label="Open menu" aria-expanded="false" class="flex h-10 w-10 items-center justify-center rounded-lg border border-border md:hidden transition-transform duration-300">
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobilePanel" class="wv-mobile-panel border-t border-border md:hidden">
+      <div class="flex flex-col gap-1 px-5 py-4">
+        <a href="index.html#how" class="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-secondary">How it works</a>
+        <a href="index.html#categories" class="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-secondary">Templates</a>
+        <a href="index.html#pricing" class="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-secondary">Pricing</a>
+        <a href="index.html#contact-us" class="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-secondary">Contact</a>
+        <a href="tel:+919629006826" class="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-secondary">Call 9629006826</a>
+        <a href="index.html#contact-us" class="mt-2 rounded-full btn-brand px-5 py-2.5 text-center text-sm font-semibold">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="cat-hero scroll-mt-24 px-5 pb-16 pt-14 sm:pt-20">
+    <div class="cat-hero-blob" style="width:420px;height:420px;top:-140px;right:-100px;background:var(--accent);"></div>
+    <div class="cat-hero-blob" style="width:340px;height:340px;bottom:-160px;left:-80px;background:var(--accent-2);"></div>
+    <div class="relative z-10 mx-auto max-w-6xl">
+      <a href="index.html#categories" class="reveal inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-foreground">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12"/></svg>
+        All templates
+      </a>
+      <div class="mt-6 grid items-center gap-10 lg:grid-cols-[1.2fr_1fr]">
+        <div>
+          <p class="reveal inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-semibold tracking-wide" style="color:var(--accent);">Housewarming</p>
+          <h1 class="reveal mt-5 font-display text-4xl leading-[1.08] font-semibold tracking-tight sm:text-5xl">Housewarming</h1>
+          <p class="reveal mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">Invite everyone home, in style.</p>
+          <div class="reveal mt-8 flex flex-wrap gap-3">
+            <a href="#gallery" class="rounded-full btn-accent px-7 py-3 text-sm font-semibold">Browse designs</a>
+            <a href="index.html#contact-us" class="rounded-full btn-ghost px-7 py-3 text-sm font-semibold">Get this customized</a>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="animate-float-slow overflow-hidden rounded-3xl shadow-lift">
+            <img src="house_warming.png" alt="Housewarming" class="h-full w-full object-cover" style="aspect-ratio: 4/3;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="scroll-mt-24 px-5 pb-20">
+    <div class="mx-auto max-w-6xl">
+      <div class="reveal-stagger grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+        <article class="tpl-card flex h-full flex-col">
+          <div class="tpl-media">
+            <img src="house_warming.png" alt="New Home Celebration Preview" loading="lazy">
+            <span class="tpl-badge">House Warming</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <h3 class="text-lg font-bold">New Home Celebration</h3>
+            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">Invite your loved ones to celebrate the opening of your new home.</p>
+            <a href="https://housewarming-vert.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full btn-accent px-6 py-3 text-sm font-semibold">Live Preview</a>
+          </div>
+        </article>
+
+        <article class="tpl-card flex h-full flex-col">
+          <div class="tpl-media">
+            <img src="house_tamil.png" alt="புதுமனை புகுவிழா அழைப்பிதழ் Preview" loading="lazy">
+            <span class="tpl-badge">புதுமனை புகுவிழா</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <h3 class="text-lg font-bold">புதுமனை புகுவிழா அழைப்பிதழ்</h3>
+            <p class="mt-2 flex-1 leading-relaxed text-muted-foreground">உங்கள் புதிய இல்லத்தின் திறப்பு விழாவை கொண்டாட உற்றார் உறவினர்களை அன்புடன் அழைக்க ஒரு அழகான தமிழ் இணையதள அழைப்பிதழ்.</p>
+            <a href="https://gsv-house.vercel.app/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex justify-center rounded-full btn-accent px-6 py-3 text-sm font-semibold">நேரடி பார்வை</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="px-5 pb-20">
+    <div class="reveal mx-auto max-w-4xl overflow-hidden rounded-4xl p-10 text-center text-white sm:p-14" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);">
+      <h2 class="font-display text-2xl font-semibold sm:text-3xl">Don't see quite the right fit?</h2>
+      <p class="mt-3 text-white/80">Tell us what you have in mind — we'll customize any of these, or build something fully your own.</p>
+      <a href="index.html#contact-us" class="mt-7 inline-flex rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-primary transition-transform duration-300 hover:-translate-y-1">Talk to Thewebvue</a>
+    </div>
+  </section>
+
+  <footer class="wv-footer">
+    <div class="mx-auto max-w-6xl px-5 py-14">
+      <div class="grid gap-10 sm:grid-cols-3">
+        <div>
+          <div class="flex items-center gap-2">
+            <div class="relative flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-black">
+              <img src="webvuelogo.png" alt="Thewebvue Logo Icon" class="absolute h-full w-full object-cover scale-[1.2]">
+            </div>
+            <span class="font-display text-lg font-bold tracking-tight text-white">Thewebvue</span>
+          </div>
+          <p class="mt-3 text-sm text-white/70">
+            Premium event & business websites, delivered fast — a branch of TheAdvue.
+          </p>
+          <div class="mt-5 flex gap-3">
+            <a href="tel:+919629006826" class="wv-social-icon" aria-label="Call">📞</a>
+            <a href="mailto:thewebvueco@gmail.com" class="wv-social-icon" aria-label="Email">✉️</a>
+            <a href="https://www.instagram.com/thewebvue?stkn=bXhiNXpydTBodnI3" target="_blank" rel="noopener noreferrer" class="wv-social-icon" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-sm font-semibold text-white uppercase tracking-wide">Templates</p>
+          <div class="mt-3 flex flex-col gap-2 text-sm text-white/70">
+            <a href="weddings.html">Weddings & Engagements</a>
+            <a href="love.html">Love & Valentine's</a>
+            <a href="birthdays.html">Birthdays & Baby</a>
+            <a href="babyshower.html">வளைகாப்பு Baby Shower</a>
+            <a href="anniversaries.html">Anniversaries</a>
+            <a href="housewarming.html">Housewarming</a>
+            <a href="business.html">Business Websites</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-sm font-semibold text-white uppercase tracking-wide">Contact</p>
+          <div class="mt-3 flex flex-col gap-2 text-sm text-white/70">
+            <a href="tel:+919629006826">9629006826</a>
+            <a href="mailto:thewebvueco@gmail.com">thewebvueco@gmail.com</a>
+            <a href="https://www.instagram.com/thewebvue?stkn=bXhiNXpydTBodnI3" target="_blank" rel="noopener noreferrer">@thewebvue</a>
+            <a href="https://theadvue.com/" target="_blank" rel="noopener noreferrer">A branch of TheAdvue → theadvue.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 border-t border-white/15 pt-6 text-center text-sm text-white/60">
+        © 2026 Thewebvue. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <div class="fab-stack">
+    <a href="tel:+919629006826" class="fab flex items-center gap-2.5 rounded-full bg-blue-600 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-700">
+      <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <span>Call</span>
+    </a>
+    <button type="button" onclick="handleFloatingWhatsApp()" class="fab flex items-center gap-2.5 rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-white hover:bg-[#20ba5a] cursor-pointer border-0">
+      <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      <span>WhatsApp</span>
+    </button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
