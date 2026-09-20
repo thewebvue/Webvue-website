@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thewebvue — Event Website Templates, Starting at ₹799</title>
+  <meta name="description" content="Browse premium birthday, wedding, business and celebration website templates. Pick a design and we customize and deliver it starting at ₹799.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: 'hsl(30 50% 98%)',
+            foreground: 'hsl(20 20% 15%)',
+            card: 'hsl(0 0% 100%)',
+            'card-foreground': 'hsl(20 20% 15%)',
+            primary: 'hsl(260 40% 25%)',
+            'primary-foreground': 'hsl(0 0% 100%)',
+            secondary: 'hsl(30 30% 94%)',
+            muted: 'hsl(30 10% 90%)',
+            'muted-foreground': 'hsl(25 10% 45%)',
+            accent: 'hsl(25 85% 55%)',
+            border: 'hsl(30 15% 88%)',
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            display: ['Fraunces', 'serif'],
+          },
+          borderRadius: { '4xl': '2rem' }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen bg-background font-sans text-foreground antialiased">
+
+  <!-- HEADER -->
+  <header class="wv-header">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
+      <a href="#top" class="flex min-w-0 items-center gap-3">
+        <div class="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl wv-logo-mark shadow-soft">
+          <img src="webvuelogo.png" alt="Thewebvue Logo Icon" class="absolute h-full w-full object-cover scale-[1.2]">
+        </div>
+        <span class="font-display text-xl font-bold tracking-tight text-foreground">Thewebvue</span>
+      </a>
+
+      <div class="hidden items-center gap-7 md:flex">
+        <a href="#how" class="wv-nav-link">How it works</a>
+        <a href="#explore" class="wv-nav-link">Templates</a>
+        <a href="#pricing" class="wv-nav-link">Pricing</a>
+        <a href="#contact-us" class="wv-nav-link">Contact</a>
+        <a href="#contact" class="rounded-full btn-brand px-5 py-2 text-sm font-semibold">Get started</a>
+      </div>
+
+      <button id="navToggle" aria-label="Open menu" aria-expanded="false" class="flex h-10 w-10 items-center justify-center rounded-lg border border-border md:hidden transition-transform duration-300">
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobilePanel" class="wv-mobile-panel border-t border-border md:hidden">
+      <div class="flex flex-col gap-1 px-5 py-4">
+        <a href="#how" class="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-secondary">How it works</a>
+        <a href="#explore" class="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-secondary">Templates</a>
+        <a href="#pricing" class="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-secondary">Pricing</a>
+        <a href="#contact-us" class="rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-secondary">Contact</a>
+        <a href="#contact" class="mt-2 rounded-full btn-brand px-5 py-2.5 text-center text-sm font-semibold">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative overflow-hidden hero-wash">
+    <div class="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:py-24 lg:grid-cols-2">
+      <div>
+        <p class="reveal inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-semibold tracking-wide text-muted-foreground">
+          A branch of TheAdvue
+        </p>
+        <h1 class="reveal mt-6 font-display text-4xl leading-[1.08] font-semibold tracking-tight text-balance sm:text-5xl lg:text-6xl">
+          Celebrate life's moments with a beautiful digital presence.
+        </h1>
+        <p class="reveal mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+          Browse our premium event website templates — weddings, birthdays, business launches and more. Choose a design, and we'll customize it for you starting at just ₹799.
+        </p>
+        <div class="reveal mt-9 flex flex-wrap items-center gap-4">
+          <a href="#explore" class="rounded-full btn-brand px-8 py-3.5 text-sm font-semibold">
+            Explore Templates
+          </a>
+          <span class="text-sm text-muted-foreground">
+            Starting at ₹799 · Delivered ready to share
+          </span>
+        </div>
+        <div class="reveal mt-8 flex flex-wrap gap-3">
+          <a href="tel:+919629006826" class="connect-pill">📞 9629006826</a>
+          <a href="mailto:thewebvueco@gmail.com" class="connect-pill">✉️ thewebvueco@gmail.com</a>
+          <a href="https://www.instagram.com/thewebvue?stkn=bXhiNXpydTBodnI3" target="_blank" rel="noopener noreferrer" class="connect-pill"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.98-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> @thewebvue</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="animate-float-slow">
+          <img src="webvue_img.png" alt="Celebrate Life's Moments" class="mx-auto w-full max-w-lg object-contain drop-shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="mx-auto max-w-6xl px-5 py-20">
+    <div class="reveal overflow-hidden rounded-4xl bg-gradient-primary p-8 text-primary-foreground shadow-lift sm:p-14" style="background: linear-gradient(135deg, hsl(260 45% 25%) 0%, hsl(275 40% 35%) 100%);">
+      <div class="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
+        <div>
+          <p class="text-xs font-semibold tracking-[0.2em] uppercase opacity-80">About us</p>
+          <h2 class="mt-4 font-display text-3xl leading-tight font-semibold sm:text-4xl">
+            Thewebvue is an official branch and subdivision of TheAdvue.
+          </h2>
+          <p class="mt-6 font-display text-xl italic opacity-90">"Your Growth Is Our Blueprint."</p>
+          <p class="mt-5 max-w-2xl leading-relaxed opacity-90">
+            At TheAdvue, we blend strategy, creativity, and tech to make brands stand out. We don't just create — we deliver real results that help your business grow.
+          </p>
+          <a href="https://theadvue.com/" target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex rounded-full bg-background px-7 py-3 text-sm font-semibold text-primary shadow-soft transition-transform duration-300 hover:-translate-y-1">
+            Visit TheAdvue
+          </a>
+        </div>
+        <div class="grid content-center gap-4">
+          <div class="rounded-3xl border border-primary-foreground/20 bg-primary-foreground/10 p-6 backdrop-blur-sm">
+            <p class="text-sm font-semibold tracking-wide uppercase opacity-80">TheAdvue</p>
+            <p class="mt-2 leading-relaxed opacity-90">
+              A full digital marketing agency offering SEO optimization, video editing, video shoots, content writing, and complete business growth management.
+            </p>
+          </div>
+          <div class="rounded-3xl border border-primary-foreground/20 bg-primary-foreground/10 p-6 backdrop-blur-sm">
+            <p class="text-sm font-semibold tracking-wide uppercase opacity-80">Thewebvue</p>
+            <p class="mt-2 leading-relaxed opacity-90">
+              Dedicated to full website development, specializing in invitations & celebrations, professional business platforms, and fully customized websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="mx-auto max-w-6xl scroll-mt-24 px-5 pb-20">
+    <div class="max-w-2xl">
+      <h2 class="reveal font-display text-3xl font-semibold tracking-tight sm:text-4xl">How it works</h2>
+      <p class="reveal mt-3 text-muted-foreground">Three simple steps from browsing to a finished, personalised website.</p>
+    </div>
+    <div class="reveal-stagger mt-12 grid gap-6 md:grid-cols-3">
+      <article class="hover-lift h-full rounded-3xl border border-border bg-card p-8 shadow-soft">
+        <span class="font-display text-4xl font-semibold text-accent">01</span>
+        <h3 class="mt-4 text-lg font-bold">Browse & Choose</h3>
+        <p class="mt-2 leading-relaxed text-muted-foreground">Explore our collection of premium event and business templates.</p>
+      </article>
+      <article class="hover-lift h-full rounded-3xl border border-border bg-card p-8 shadow-soft">
+        <span class="font-display text-4xl font-semibold text-accent">02</span>
+        <h3 class="mt-4 text-lg font-bold">Experience the Live Preview</h3>
+        <p class="mt-2 leading-relaxed text-muted-foreground">Click to interact with the actual website, exactly as your guests would.</p>
+      </article>
+      <article class="hover-lift h-full rounded-3xl border border-border bg-card p-8 shadow-soft">
+        <span class="font-display text-4xl font-semibold text-accent">03</span>
+        <h3 class="mt-4 text-lg font-bold">We Customize It</h3>
+        <p class="mt-2 leading-relaxed text-muted-foreground">Send us your details, and we'll tailor the site to your needs starting at a base fee of ₹799.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CATEGORY GRID -->
+  <!-- EXPLORE (two top-level categories) -->
+  <section id="explore" class="scroll-mt-24 bg-secondary/60 py-20">
+    <div class="mx-auto max-w-6xl px-5">
+      <div class="max-w-2xl">
+        <h2 class="reveal font-display text-3xl font-semibold tracking-tight sm:text-4xl">Find your occasion</h2>
+        <p class="reveal mt-3 text-muted-foreground">
+          Start with what you're building. Each path opens its own gallery of real, working websites.
+        </p>
+      </div>
+
+      <div class="reveal-stagger mt-12 grid gap-6 lg:grid-cols-2">
+        <a href="invitations.html" class="cat-card group h-80 sm:h-96" style="--tile-tint: hsla(345,55%,24%,0.85);">
+          <img src="weding_img1.png" alt="Invitations and celebration website templates" class="absolute inset-0 h-full w-full object-cover">
+          <div class="cat-card-body flex h-full flex-col justify-end p-7 sm:p-9">
+            <span class="cat-count w-fit">Weddings · Birthdays · Housewarming & more</span>
+            <h3 class="mt-4 font-display text-2xl font-semibold text-white sm:text-3xl">Invitations &amp; Celebrations</h3>
+            <p class="mt-2 max-w-sm text-sm text-white/80">Pick an occasion, then browse designs made just for it.</p>
+            <span class="cat-arrow mt-5">
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="business.html" class="cat-card group h-80 sm:h-96" style="--tile-tint: hsla(215,45%,15%,0.85);">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80" alt="Business website templates" class="absolute inset-0 h-full w-full object-cover">
+          <div class="cat-card-body flex h-full flex-col justify-end p-7 sm:p-9">
+            <span class="cat-count w-fit">New · Real Estate &amp; more</span>
+            <h3 class="mt-4 font-display text-2xl font-semibold text-white sm:text-3xl">Business Websites</h3>
+            <p class="mt-2 max-w-sm text-sm text-white/80">Real estate, clinics and professional sites that convert.</p>
+            <span class="cat-arrow mt-5">
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRICING -->
+  <section id="pricing" class="scroll-mt-24 px-5 py-24 hero-wash">
+    <div class="mx-auto max-w-6xl">
+      <div class="reveal text-center mb-16">
+        <p class="text-xs font-semibold tracking-[0.25em] text-muted-foreground uppercase">Transparent Pricing</p>
+        <h2 class="mt-5 font-display text-3xl leading-tight font-semibold tracking-tight text-balance sm:text-4xl">
+          Choose the Right Plan for Your Website
+        </h2>
+        <p class="mt-3 text-muted-foreground">Every price below is a starting point — the final quote depends on your requirements.</p>
+      </div>
+
+      <div class="reveal-stagger grid gap-8 md:grid-cols-3">
+        <div class="price-card rounded-3xl border border-border bg-card p-8 shadow-soft flex flex-col">
+          <h3 class="text-xl font-bold">Template Website</h3>
+          <p class="mt-2 text-sm text-muted-foreground">Pick a template — we add your text, photos and details.</p>
+          <p class="mt-6 font-display text-4xl font-semibold">₹799<span class="text-base font-medium text-muted-foreground"> onwards</span></p>
+          <p class="mt-1 text-xs text-muted-foreground">Price varies with requirement</p>
+          <ul class="mt-8 mb-8 flex-1 space-y-3 text-sm text-muted-foreground">
+            <li class="flex items-center gap-2"><span class="text-accent">✓</span> Replace text & images</li>
+            <li class="flex items-center gap-2"><span class="text-accent">✓</span> Ready to share link</li>
+            <li class="flex items-center gap-2"><span class="text-accent">✓</span> Mobile responsive</li>
+          </ul>
+          <a href="#contact-us" class="rounded-full btn-ghost px-6 py-3 text-center text-sm font-semibold">Get this plan</a>
+        </div>
+
+        <div class="price-card featured relative rounded-3xl p-8 shadow-lift flex flex-col md:-translate-y-4">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-4 py-1 text-xs font-semibold text-white whitespace-nowrap">
+            Most Popular
+          </span>
+          <h3 class="text-xl font-bold">Customized Website</h3>
+          <p class="mt-2 text-sm text-white/75">Layout, colors and structure tailored to your story.</p>
+          <p class="mt-6 font-display text-4xl font-semibold">₹2,999<span class="text-base font-medium text-white/70"> onwards</span></p>
+          <p class="mt-1 text-xs text-white/70">Price varies with requirement</p>
+          <ul class="mt-8 mb-8 flex-1 space-y-3 text-sm text-white/85">
+            <li class="flex items-center gap-2"><span>✓</span> Everything in Template</li>
+            <li class="flex items-center gap-2"><span>✓</span> Custom color themes & sections</li>
+            <li class="flex items-center gap-2"><span>✓</span> Layout modifications</li>
+            <li class="flex items-center gap-2"><span>✓</span> Priority delivery</li>
+          </ul>
+          <a href="#contact-us" class="rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-primary transition-transform duration-300 hover:-translate-y-1">Get this plan</a>
+        </div>
+
+        <div class="price-card rounded-3xl border border-border bg-card p-8 shadow-soft flex flex-col">
+          <h3 class="text-xl font-bold">Business Website</h3>
+          <p class="mt-2 text-sm text-muted-foreground">A bespoke site built for real estate, clinics & brands.</p>
+          <p class="mt-6 font-display text-4xl font-semibold">₹5,999<span class="text-base font-medium text-muted-foreground"> onwards</span></p>
+          <p class="mt-1 text-xs text-muted-foreground">Price varies with requirement</p>
+          <ul class="mt-8 mb-8 flex-1 space-y-3 text-sm text-muted-foreground">
+            <li class="flex items-center gap-2"><span class="text-accent">✓</span> 100% unique design</li>
+            <li class="flex items-center gap-2"><span class="text-accent">✓</span> Enquiry & booking forms</li>
+            <li class="flex items-center gap-2"><span class="text-accent">✓</span> SEO-ready structure</li>
+          </ul>
+          <a href="business.html" class="rounded-full btn-ghost px-6 py-3 text-center text-sm font-semibold">See business templates</a>
+        </div>
+      </div>
+
+      <div class="reveal mt-16 text-center">
+        <a href="#contact-us" class="inline-flex rounded-full btn-brand px-9 py-4 text-sm font-semibold">
+          Contact Us to Get Started
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact-us" class="scroll-mt-24 border-t border-border bg-card px-5 py-20">
+    <div class="mx-auto max-w-xl text-center">
+      <p class="reveal text-xs font-semibold tracking-[0.25em] text-muted-foreground uppercase">Get In Touch</p>
+      <h2 class="reveal mt-4 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+        Tell Us What You Need
+      </h2>
+      <p class="reveal mt-3 text-muted-foreground mb-4">
+        Fill out your details below and choose how you'd like to connect.
+      </p>
+      <div class="reveal mb-8 flex flex-wrap justify-center gap-3">
+        <a href="tel:+919629006826" class="connect-pill">📞 9629006826</a>
+        <a href="mailto:thewebvueco@gmail.com" class="connect-pill">✉️ thewebvueco@gmail.com</a>
+        <a href="https://www.instagram.com/thewebvue?stkn=bXhiNXpydTBodnI3" target="_blank" rel="noopener noreferrer" class="connect-pill"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.98-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> @thewebvue</a>
+      </div>
+
+      <form id="contactForm" onsubmit="event.preventDefault();" class="reveal text-left space-y-5 rounded-3xl border border-border bg-secondary/30 p-6 sm:p-10 shadow-soft">
+
+        <div>
+          <label for="userName" class="block text-sm font-semibold text-foreground mb-1.5">Your Name *</label>
+          <input type="text" id="userName" required placeholder="e.g. John Doe" class="block w-full rounded-xl border border-border bg-card px-4 py-3 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20">
+        </div>
+
+        <div>
+          <label for="userNumber" class="block text-sm font-semibold text-foreground mb-1.5">Phone Number *</label>
+          <input type="tel" id="userNumber" required placeholder="e.g. +91 9876543210" class="block w-full rounded-xl border border-border bg-card px-4 py-3 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20">
+        </div>
+
+        <div>
+          <label for="userLocation" class="block text-sm font-semibold text-foreground mb-1.5">From (City / Location) *</label>
+          <input type="text" id="userLocation" required placeholder="e.g. Chennai" class="block w-full rounded-xl border border-border bg-card px-4 py-3 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20">
+        </div>
+
+        <div>
+          <label for="templateGroup" class="block text-sm font-semibold text-foreground mb-1.5">Which template are you looking for? *</label>
+          <select id="templateGroup" required class="block w-full rounded-xl border border-border bg-card px-4 py-3 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20">
+            <option value="" disabled selected>Select a template category...</option>
+            <option value="Weddings & Engagements">Weddings & Engagements</option>
+            <option value="Love & Valentine's">Love & Valentine's</option>
+            <option value="Birthdays & Baby">Birthdays & Baby</option>
+            <option value="வளைகாப்பு Baby Shower">வளைகாப்பு Baby Shower</option>
+            <option value="Anniversaries">Anniversaries</option>
+            <option value="Housewarming">Housewarming</option>
+            <option value="Business Website">Business Website</option>
+            <option value="Custom Requirement">Custom Requirement / Other</option>
+          </select>
+        </div>
+
+        <div class="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button type="button" onclick="handleWhatsApp()" class="hover-lift flex w-full sm:w-auto items-center justify-center gap-3 rounded-full bg-[#25D366] px-8 py-3.5 font-semibold text-white shadow-soft transition-all duration-300 hover:bg-[#20ba5a]">
+            <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>Chat on WhatsApp</span>
+          </button>
+
+          <button type="button" onclick="handleCall()" class="hover-lift flex w-full sm:w-auto items-center justify-center gap-3 rounded-full btn-brand px-8 py-3.5 font-semibold">
+            <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            <span>Call Now</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Floating Sticky WhatsApp and Call Buttons -->
+  <div class="fab-stack">
+    <a href="tel:+919629006826" class="fab flex items-center gap-2.5 rounded-full bg-blue-600 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-700">
+      <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+      </svg>
+      <span>Call</span>
+    </a>
+    <button type="button" onclick="handleFloatingWhatsApp()" class="fab flex items-center gap-2.5 rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-white hover:bg-[#20ba5a] cursor-pointer border-0">
+      <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="wv-footer">
+    <div class="mx-auto max-w-6xl px-5 py-14">
+      <div class="grid gap-10 sm:grid-cols-3">
+        <div>
+          <div class="flex items-center gap-2">
+            <div class="relative flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-black">
+              <img src="webvuelogo.png" alt="Thewebvue Logo Icon" class="absolute h-full w-full object-cover scale-[1.2]">
+            </div>
+            <span class="font-display text-lg font-bold tracking-tight text-white">Thewebvue</span>
+          </div>
+          <p class="mt-3 text-sm text-white/70">
+            Premium event & business websites, delivered fast — a branch of TheAdvue.
+          </p>
+          <div class="mt-5 flex gap-3">
+            <a href="tel:+919629006826" class="wv-social-icon" aria-label="Call">📞</a>
+            <a href="mailto:thewebvueco@gmail.com" class="wv-social-icon" aria-label="Email">✉️</a>
+            <a href="https://www.instagram.com/thewebvue?stkn=bXhiNXpydTBodnI3" target="_blank" rel="noopener noreferrer" class="wv-social-icon" aria-label="Instagram"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.98-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-sm font-semibold text-white uppercase tracking-wide">Templates</p>
+          <div class="mt-3 flex flex-col gap-2 text-sm text-white/70">
+            <a href="invitations.html">Invitations & Celebrations</a>
+            <a href="weddings.html">— Weddings & Engagements</a>
+            <a href="love.html">— Love & Valentine's</a>
+            <a href="birthdays.html">— Birthdays & Baby</a>
+            <a href="babyshower.html">— வளைகாப்பு Baby Shower</a>
+            <a href="anniversaries.html">— Anniversaries</a>
+            <a href="housewarming.html">— Housewarming</a>
+            <a href="business.html">Business Websites</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-sm font-semibold text-white uppercase tracking-wide">Contact</p>
+          <div class="mt-3 flex flex-col gap-2 text-sm text-white/70">
+            <a href="tel:+919629006826">9629006826</a>
+            <a href="mailto:thewebvueco@gmail.com">thewebvueco@gmail.com</a>
+            <a href="https://www.instagram.com/thewebvue?stkn=bXhiNXpydTBodnI3" target="_blank" rel="noopener noreferrer">@thewebvue</a>
+            <a href="https://theadvue.com/" target="_blank" rel="noopener noreferrer">A branch of TheAdvue → theadvue.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 border-t border-white/15 pt-6 text-center text-sm text-white/60">
+        © 2026 Thewebvue. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
